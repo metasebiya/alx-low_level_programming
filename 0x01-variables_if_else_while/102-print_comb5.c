@@ -1,21 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combination of two digit numbers.
+ * main - This program prints all possible combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
+	int a, b, c, d;
+	int i, j; /* counters */
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-			if (i != j || j != i)
+			a = (i / 10) + '0';
+			b = (i % 10) + '0';
+			c = (j / 10) + '0';
+			d = (j % 10) + '0';
+			putchar(a);
+			putchar(b);
+			putchar(' ');
+			putchar(c);
+			putchar(d);
+
+			if (i != 98)
 			{
 				putchar(',');
 				putchar(' ');
@@ -24,7 +32,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
-
 }
