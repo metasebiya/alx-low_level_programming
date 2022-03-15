@@ -7,9 +7,7 @@
  */
 int _isalpha(int c)
 {
-	int i;
-	
-	i = c;
+	int i = c;
 
 	if (i >= 97 && i <= 122)
 		return (1);
