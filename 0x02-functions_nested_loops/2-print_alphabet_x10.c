@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - prints english alphabet in lower case 10 times
- * Return: 0 Always (Success)
+ * print_alphabet - This function prints the alphabet in lowercase
+ * ten times
  */
 void print_alphabet_x10(void)
 {
@@ -21,8 +21,3 @@ void print_alphabet_x10(void)
 	}
 }
 
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
